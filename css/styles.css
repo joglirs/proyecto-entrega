@@ -239,7 +239,127 @@ font-size: 30px;
     height: 250px;
 }
 
+/* Fondo para el body, podemos agregar imagen si se desea */
+.body-cal {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 
+  background-image: url('../img/agricultura-inteligente-con-agricultura-iot.jpg'); /* Ruta a tu imagen */
+  background-size: cover;       /* Cubre toda la pantalla */
+  background-repeat: no-repeat; /* No se repite */
+  background-position: center;  /* Centrada */
+  background-attachment: fixed; /* Se mantiene al hacer scroll */
+}
+
+/* Contenedor principal para centrar la calculadora */
+.calculator-section {
+  display: flex;
+  justify-content: center;    /* Centra horizontalmente */
+  align-items: center;        /* Centra verticalmente */
+  height: 100vh;              /* Asegura que ocupe toda la altura de la ventana */
+  padding: 20px;              /* Espaciado para no pegar el contenido al borde */
+  box-sizing: border-box;     /* Incluye el padding en los cálculos de tamaño */
+}
+
+/* Estilo para la calculadora */
+.calculator {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.6); /* Fondo gris claro semitransparente */
+  border-radius: 10px;
+  color: green;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras sutiles */
+  box-sizing: border-box;
+}
+
+/* Estilo del título */
+.calculator h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: green;
+}
+
+/* Estilo del párrafo */
+.calculator p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Estilo para el formulario */
+.calculator form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo de los inputs */
+.calculator input {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Estilo del botón */
+.calculator button {
+  padding: 10px 20px;
+  width: 80%;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background-color: darkgreen;
+}
+
+/* Estilo del resultado */
+.result-visual {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: green;
+}
+
+.result-visual li {
+  list-style: none;
+}
+
+
+
+/* Estilo para la calculadora 
+.calculator {
+  flex: 1;
+  padding: 40px;
+  background-color: #dac0d4;
+  border-radius: 10px;
+  color: green;
+}
+
+/* Estilo para el resultado 
+.result-visual {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #080707;
+}
+*/
+
+
+.result-visual li {
+  list-style: none;
+}
 
 
 
@@ -285,5 +405,21 @@ font-size: 30px;
     .main-content{
         margin-left: 60px;
     }
+     .calculator {
+    padding: 20px;
+  }
+
+  .calculator input,
+  .calculator button {
+    width: 100%; /* Asegura que los inputs y botones ocupen todo el ancho */
+  }
+
+  .calculator h1 {
+    font-size: 20px;
+  }
+
+  .calculator p {
+    font-size: 14px;
+  }
 }
 
